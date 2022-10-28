@@ -1,0 +1,4 @@
+.page-regist .page-auth__form__header__icon {
+    background-image: url(../assets/person_add.svg);
+    left: calc(50% - 60px);
+}

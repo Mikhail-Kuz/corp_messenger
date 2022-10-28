@@ -1,0 +1,233 @@
+.page-auth__preview {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-auth__preview .title {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-auth__preview .text {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.page-auth__preview .text:first-child {
+    text-transform: uppercase;
+}
+
+.preview__description {
+    margin-top: 100px;
+}
+
+.preview__description .text:first-child {
+    text-transform: none;
+    font-size: 18px;
+}
+
+.people {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.avatar {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.avatar:last-child {
+    margin-right: 0;
+}
+
+.avatar1,
+.avatar1 > .info .photo  {
+    background-image: url(../assets/ed.png);
+}
+.avatar2,
+.avatar2 > .info .photo {
+    background-image: url(../assets/mk.png);
+}
+.avatar3,
+.avatar3 > .info .photo {
+    background-image: url(../assets/an.png);
+    background-size: cover;
+    background-position-x: 50%;
+}
+.avatar4,
+.avatar4 > .info .photo {
+    background-image: url(../assets/il.png);
+    background-size: cover;
+    background-position-y: -10px;
+}
+
+.photo {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.avatar4 > .info .photo {
+    background-position-y: -80px;
+}
+
+.avatar1:hover > .info,
+.avatar2:hover > .info,
+.avatar3:hover > .info,
+.avatar4:hover > .info {
+    display: block;
+    box-shadow: 0px 0px 15px 0px #000;
+}
+
+.avatar1 .info, 
+.avatar2 .info, 
+.avatar3 .info, 
+.avatar4 .info {
+    position: absolute;
+    bottom: 60px;
+    left: -125px;
+    display: none;
+    width: 300px;
+    height: 450px;
+    background-color: #fff;
+}
+
+.info .name {
+    color: #1890ff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 10px;
+}
+
+.info .description {
+    padding: 0 10px;
+    color: #8f8f8f;
+}
+
+.page-auth__form {
+    width: 600px;
+    height: 100%;
+    background-color: #1c1c1c;
+    box-shadow: 0px 0px 15px 0px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+    color: #1890ff;
+}
+
+.page-auth__form__header {
+    position: relative;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.page-auth__form__header__icon {
+    position: absolute;
+    bottom: 100px;
+    left: calc(50% - 75px);
+    width: 150px;
+    height: 150px;
+    background-image: url(../assets/account_circle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.input-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.input-box input {
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 100;
+}
+
+.input-box label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #8f8f8f;
+}
+
+.input-box .outline {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    background-color: #1890ff;
+}
+
+.input-box input:valid ~ label,
+.input-box input:focus ~ label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    color: #1890ff;
+    transition: all 0.1s ease-out;
+}
+
+.input-box input:valid ~ .outline,
+.input-box input:focus ~ .outline {
+    height: 100%;
+    transition: all 0.1s ease-out;
+}
+
+.page-auth__form__footer {
+    margin-top: 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.links a.primary {
+    color: #1890ff;
+}
+
+button {
+    margin-top: 35px;
+    padding: 8px 20px;
+    background-color: #1890ff;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
