@@ -53,6 +53,7 @@
 
 .menu .menu__header .dropdown .dropdown-btn:focus ~ .dropdown__select {
     padding: 10px 0;
+    border-radius: 2px;
     height: calc(47px * 3);
     transition: all 0.3s ease-in-out;
 }
@@ -124,9 +125,9 @@
     display: none;
     position: absolute;
     top: 30px;
-    padding: 5px 0;
-    background-color: #fff;
+    padding: 10px 0;
     border-radius: 2px;
+    background-color: #1c1c1c;
     box-shadow: 0px 0px 15px 0px #000;
 }
 
@@ -135,11 +136,12 @@
     width: 100%;
     padding: 10px 25px;
     font-weight: 500;
-    color: #1c1c1c;
+    color: #fff;
 }
 
 .menu .menu__header .settings .settings-dropdown .settings-dropdown__item:hover {
-    background-color: #c6c6c6;
+    background-color: #fff;
+    color: #1c1c1c;
     cursor: pointer;
 }
 
