@@ -220,7 +220,7 @@
     color: #1890ff;
 }
 
-button {
+button.primary {
     margin-top: 35px;
     padding: 8px 20px;
     background-color: #1890ff;

@@ -27,6 +27,16 @@
     font-weight: 500;
 }
 
+.menu .menu__header .settings {
+    position: relative;
+}
+
+.menu .menu__header .settings button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
 .menu .menu__header .settings .settings-icon {
     width: 24px;
     height: 24px;
@@ -34,10 +44,44 @@
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 } 
+
+.menu .menu__header .settings .settings-icon:focus ~ .settings-dropdown,
+.menu .menu__header .settings .settings-dropdown:hover {
+    display: block;
+}
+
+.menu .menu__header .settings .settings-icon:focus {
+    transform: rotate(-90deg);
+    transition: all 0.3s ease-in-out;
+}
 
 .menu .menu__header .settings .settings-dropdown {
     display: none;
+    position: absolute;
+    top: 30px;
+    padding: 5px 0;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 0px 15px 0px #000;
+}
+
+.menu .menu__header .settings .settings-dropdown .settings-dropdown__item {
+    display: flex;
+    width: 100%;
+    padding: 10px 25px;
+    font-weight: 500;
+    color: #1c1c1c;
+}
+
+.menu .menu__header .settings .settings-dropdown .settings-dropdown__item:hover {
+    background-color: #c6c6c6;
+    cursor: pointer;
+}
+
+.menu .menu__header .settings .settings-dropdown .settings-dropdown__item:last-child a {
+    color: red;
 }
 
 .menu .menu__select {
