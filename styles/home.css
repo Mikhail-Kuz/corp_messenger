@@ -68,6 +68,7 @@
     background-color: #1c1c1c;
     box-shadow: 0px 0px 15px 0px #000;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu .menu__header .dropdown .dropdown__select .dropdown__select__item {
@@ -116,7 +117,9 @@
 
 .menu .menu__header .settings .settings-icon:focus ~ .settings-dropdown,
 .menu .menu__header .settings .settings-dropdown:hover {
-    display: block;
+    height: 74px;
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu .menu__header .settings .settings-icon:focus {
@@ -125,21 +128,21 @@
 }
 
 .menu .menu__header .settings .settings-dropdown {
-    display: none;
+    height: 0;
     position: absolute;
     top: 30px;
-    padding: 10px 0;
     border-radius: 2px;
     background-color: #1c1c1c;
     box-shadow: 0px 0px 15px 0px #000;
     z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 .menu .menu__header .settings .settings-dropdown .settings-dropdown__item {
     display: flex;
     width: 100%;
     padding: 10px 25px;
-    font-weight: 500;
     color: #fff;
 }
 
