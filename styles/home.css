@@ -132,6 +132,7 @@
     border-radius: 2px;
     background-color: #1c1c1c;
     box-shadow: 0px 0px 15px 0px #000;
+    z-index: 1;
 }
 
 .menu .menu__header .settings .settings-dropdown .settings-dropdown__item {
